@@ -76,7 +76,7 @@ function App() {
   }, [query, page]);
 
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
+    const handleKeyDown = (e: KeyboardEvent): void => {
       if (isModalOpen) {
         if (e.key === "ArrowLeft") {
           handlePrevPhoto();
@@ -99,7 +99,7 @@ function App() {
     }
   }, [isModalOpen, photos]);
 
-  const handleSearch = (query: string) => {
+  const handleSearch = (query: string): void => {
     setQuery(query);
     setPhotos([]);
     setPage(1);
