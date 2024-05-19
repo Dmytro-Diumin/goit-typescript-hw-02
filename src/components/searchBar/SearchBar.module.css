@@ -1,0 +1,24 @@
+.headerWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input {
+  padding-left: 30px; /* Забезпечує відступ для іконки */
+  width: 300px; /* Змініть ширину за потребою */
+  height: 40px; /* Змініть висоту за потребою */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
